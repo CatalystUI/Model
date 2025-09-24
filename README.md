@@ -1,0 +1,16 @@
+# The CatalystUI Model ![Static Badge](https://img.shields.io/badge/Presented%20by-CatalystUI%20LLC-blue?style=flat-square&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjk5LjI1IDIwODciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNDcxLjYxLDExNzUuNjhjMzMuNjgtODguNjYsNTcuNjktMTg1LjE5LDY3LjYzLTI4OS42OCwyMS4xNC0yMjIuMTYtMjguMjctNDA2LjUyLTcwLTUyMS04NC41NCw0Mi4xMS0xODguNDIsMTAzLjQxLTI5NiwxOTItMTE5LjE5LDk4LjE1LTIwNS4zLDE5OC44MS0yNjUsMjgwLDI5LjQ5LTc3LjAxLDk5LjU2LTI0Ny4yNywxMDYtMzc5LDExLjc1LTI0MC40LTIzLjAzLTM2NC40Ny03MC00NThDODAyLjAyLDk5LjUxLDMwMS41NywzNzAuNywxMDYuMjUsODY3Yy0yMjEuNjYsNTYzLjIyLTM0Ljc3LDEwNTkuNDQsMTAsMTIyMCwxNy44Ni0uMTYsMzYuMTgtLjYzLDU0LjkyLTEuNDQtMjMuMDktMTIwLjUxLTU0Ljc4LTM4MS43NCw1MC4wOC02ODEuNTYsMTMwLjg0LTM3NC4xLDM5NC4zOC01NzYuOTYsNDkyLTY0NS05NC44MiwxMjEuNDktMjI2LjMyLDMyMC4wNy0zMTQsNTkzLTk2LjMzLDI5OS44NC05OC4yMiw1NjEuMS04Ny4wNyw3MjEuMDMsMTQwLjUzLTE5LjAyLDI5NS45Ny02MC4wNyw0NTMuMDctMTM5LjAzLDEyLjE3LTYuMTIsNTYuNS0yOS4xLDExOC4yNi02OS4xNWw3Ni4yNCwxMzIuMDVoNDkzbDI0Ni41LTQyNi45NS0yMjcuNjMtMzk0LjI3WiIvPjwvc3ZnPg==)
+
+A cross-platform model for human-computer interaction that transforms raw data into fast, consistent, and future-proof experiences.
+
+## ⚠️ IMPORTANT NOTICE ⚠️
+### The CatalystUI Model is a proprietary specification.
+© 2025 CatalystUI LLC — All Rights Reserved
+
+**Unauthorized commercial use, redistribution, or modification is strictly prohibited.**
+
+This repository is published for **transparency, feedback, and evaluation purposes only**.
+
+You may *not* incorporate this model, in whole or in part, into any profit-generating product or service without **prior written consent** from the author.
+
+A formal license will be introduced in a future release.
+For details, see the [LICENSE](./LICENSE) file.
