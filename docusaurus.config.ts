@@ -54,17 +54,25 @@ const config: Config = {
                 {
                     type: "doc",
                     position: "left",
-                    docId: "model",
+                    docId: "index",
+                    docsPluginId: "model",
                     label: "Model"
+                },
+                {
+                    to: "/frameworks/",
+                    label: "Frameworks",
+                    position: "left",
+                    activeBaseRegex: `/frameworks/`
                 },
                 {
                     type: "search",
                     position: "right"
                 },
-                // TODO: Revisit.
+                // This needs to only appear on the correct docs pages
                 // {
                 //     type: "docsVersionDropdown",
-                //     position: "right"
+                //     position: "right",
+                //     docsPluginId: "model"
                 // },
                 {
                     type: "localeDropdown",
@@ -73,6 +81,15 @@ const config: Config = {
             ],
             hideOnScroll: true
         },
+        footer: {
+            logo: {
+                alt: "CatalystUI Logo",
+                src: "logo.png",
+                width: 117,
+                height: 28
+            },
+            copyright: `Copyright © ${new Date().getFullYear()} FireController#1847.<br/>Copyright © ${new Date().getFullYear()} CatalystUI LLC.<br/>Built with Docusaurus.`,
+        },
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
@@ -80,12 +97,25 @@ const config: Config = {
     } satisfies Preset.ThemeConfig,
     presets: [
         [
-            "classic",
+            "@docusaurus/preset-classic",
             {
                 docs: {
-                    sidebarPath: "./sidebars.ts"
-                }
-            } satisfies Preset.Options
+                    id: "model",
+                    path: "docs/hm-model",
+                    routeBasePath: "/model/"
+                },
+                blog: false
+            }
+        ]
+    ],
+    plugins: [
+        [
+            "@docusaurus/plugin-content-docs",
+            {
+                id: "framework-netcore",
+                path: "docs/fw-netcore",
+                routeBasePath: "/frameworks/netcore/"
+            }
         ]
     ]
 };
