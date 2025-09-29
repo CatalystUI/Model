@@ -68,12 +68,22 @@ const config: Config = {
                     type: "search",
                     position: "right"
                 },
-                // This needs to only appear on the correct docs pages
-                // {
-                //     type: "docsVersionDropdown",
-                //     position: "right",
-                //     docsPluginId: "model"
-                // },
+                {
+                    type: "docsVersionDropdown",
+                    position: "right",
+                    docsPluginId: "model",
+                    versions: {
+                        current: {label: "Draft 3"}
+                    }
+                },
+                {
+                    type: "docsVersionDropdown",
+                    position: "right",
+                    docsPluginId: "framework-netcore",
+                    versions: {
+                        current: {label: "v1.0.0-alpha.2"}
+                    }
+                },
                 {
                     type: "localeDropdown",
                     position: "right"
