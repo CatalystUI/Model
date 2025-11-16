@@ -18,7 +18,7 @@ Catalyst was born out of years of frustration with the limits of modern framewor
 
 But what if it isn’t?
 
-Instead of accepting compromise, CatalystUI began with a different question: what if the problem isn’t the tools at all, but the way we think about human-computer interaction? What if, like the OSI model for networks, there’s a deeper truth behind how data moves between people and machines?
+Instead of accepting compromise, CatalystUI began with a different question: what if the problem isn’t the tools at all, but the way we think about human-computer interaction? What if, similar to the OSI model for networks, there’s a deeper truth behind how data moves between people and machines?
 
 The answer became the CatalystUI Model—a universal map that shows the exact steps every interaction takes, from raw data to human experience, and back again. It’s not a new framework layered on top of old problems—it’s a foundation built on truth.
 
