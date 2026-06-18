@@ -1,0 +1,1 @@
+Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to Connectors on the [Connectors page](../index.md).

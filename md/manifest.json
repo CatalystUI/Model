@@ -18,15 +18,109 @@
         },
         {
             "title": "i18n.domains",
-            "path": "/domains"
+            "path": "/domains",
+            "children": [
+                {
+                    "title": "Symbolic",
+                    "path": "/domains/symbolic"
+                },
+                {
+                    "title": "Visual",
+                    "path": "/domains/visual"
+                },
+                {
+                    "title": "Auditory",
+                    "path": "/domains/auditory"
+                },
+                {
+                    "title": "Tactile",
+                    "path": "/domains/tactile"
+                },
+                {
+                    "title": "Olfactory",
+                    "path": "/domains/olfactory"
+                },
+                {
+                    "title": "Gustatory",
+                    "path": "/domains/gustatory"
+                },
+                {
+                    "title": "Multisensory",
+                    "path": "/domains/multisensory"
+                }
+            ]
         },
         {
             "title": "i18n.stack",
-            "path": "/stack"
+            "path": "/stack",
+            "children": [
+                {
+                    "title": "Data Storage (implied)",
+                    "path": "/stack/data-storage"
+                },
+                {
+                    "title": "Layer 7. Digital Data",
+                    "path": "/stack/digital-data"
+                },
+                {
+                    "title": "Layer 6. Structure & Semantics",
+                    "path": "/stack/structure-and-semantics"
+                },
+                {
+                    "title": "Layer 5. Components, Controls, & Layouts",
+                    "path": "/stack/components-controls-and-layouts"
+                },
+                {
+                    "title": "Layer 4. Graphs & Frames",
+                    "path": "/stack/graphs-and-frames"
+                },
+                {
+                    "title": "Layer 3. Renderers",
+                    "path": "/stack/renderers"
+                },
+                {
+                    "title": "Layer 2. Windows",
+                    "path": "/stack/windows"
+                },
+                {
+                    "title": "Layer 1. Systems",
+                    "path": "/stack/systems"
+                },
+                {
+                    "title": "Human Interface (implied)",
+                    "path": "/stack/human-interface"
+                }
+            ]
         },
         {
             "title": "i18n.connectors",
-            "path": "/connectors"
+            "path": "/connectors",
+            "children": [
+                {
+                    "title": "Data (Layer 7 ↔ Layer 6)",
+                    "path": "/connectors/data"
+                },
+                {
+                    "title": "Parsers (Layer 6 ↔ Layer 5)",
+                    "path": "/connectors/parsers"
+                },
+                {
+                    "title": "Adapters (Layer 5 ↔ Layer 4)",
+                    "path": "/connectors/adapters"
+                },
+                {
+                    "title": "Bridges (Layer 4 ↔ Layer 3)",
+                    "path": "/connectors/bridges"
+                },
+                {
+                    "title": "Surfaces (Layer 3 ↔ Layer 2)",
+                    "path": "/connectors/surfaces"
+                },
+                {
+                    "title": "Native (Layer 2 ↔ Layer 1)",
+                    "path": "/connectors/native"
+                }
+            ]
         },
         {
             "title": "i18n.interactions",
