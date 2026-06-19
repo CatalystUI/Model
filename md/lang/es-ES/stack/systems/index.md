@@ -1,0 +1,1 @@
+Como CatalystUI está en una versión temprana, parece que todavía no se ha escrito la explicación en profundidad de esta página. Perdón por eso. Por ahora, puedes leer la introducción general al Stack en la [página del Stack](../index.md).

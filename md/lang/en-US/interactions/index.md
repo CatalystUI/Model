@@ -28,7 +28,7 @@ This is why user interfaces cannot be designed as if computers are at the center
 
 That is the heart of the CatalystUI Model. It gives us a way to see the entire journey: the information being stored, the domains it belongs to, the layers it passes through, the connectors that transform it, and the interaction that brings it back to the person who started the exchange. It helps us stop treating user interfaces as piles of disconnected widgets, windows, APIs, renderers, and devices, and instead recognizes them as complete systems of communication between _people_ and _machines_.
 
-### Interactions: The Purpose of Behind It All
+### The Purpose of Behind It All
 
 For years, the dream was simple but stubborn: technology should not have to feel this broken. A program doesn’t need to become bloated, fragile, or platform-bound just to give us a clear way to interact with the machine. A framework doesn’t need to hide simple ideas behind layers of confusion. A user interface doesn’t need to force the person to think like the computer. It is important for a computer to be designed to understand the person. CatalystUI exists because that dream is not impossible. It only needed a model clear enough to describe what was really happening.
 

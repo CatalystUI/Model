@@ -1,0 +1,1 @@
+Como o CatalystUI está em lançamento inicial, parece que a discussão aprofundada desta página ainda não foi escrita. Desculpe por isso. Por enquanto, você pode ler a introdução geral aos domínios na [página de Domains](../index.md).
