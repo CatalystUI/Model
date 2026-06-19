@@ -1,1 +1,39 @@
 # 7. Interactions
+
+## High-Level Overview
+
+At this point, we can describe a user interface through the CatalystUI Model with far more clarity than before. We can identify the flow of information, classify that information into domains, trace it through the Stack, and explain how connectors move and transform it from one layer to the next. In doing so, much of the mystery behind user interfaces begins to dissolve. We can see where the information starts, where it goes, how it changes, and how it eventually reaches the user.
+
+So, are we finished? Not quite. There is still one essential part of the puzzle we have not fully addressed: _you!_
+
+The most important part of any user interface is the person using it. Without the user, the interface loses its purpose. At that point, we would simply be describing one machine communicating with another, such as a server sending data to an API, or one program passing instructions to another. Those exchanges may be useful, but they are not the full subject of the Model. A user interface exists because a person needs to perceive, understand, or choose something, or respond in some way. Even if your cat steps onto your keyboard, calls upon the Cat Gods, and returns the earth to their rightful throne, the point remains the same: something outside the system has acted upon it, and the interface must now respond.
+
+This is why the “Human Interface” matters. We have already identified it as the implied endpoint at the bottom of the Stack, but now we need to look more closely at what happens there. Information does not simply reach the user and stop. The user can respond. They can click, speak, move, type, listen, ignore, hesitate, misunderstand, or act in a way the system did not expect. That response becomes part of the flow.
+
+Because of this, there is one more kind of data we need to identify and track: _interaction_. An interaction is the exchange that occurs when information reaches the user, the user responds, and the system receives that response as part of the continuing flow. It is the point where the Model stops being only about presentation and becomes about participation. The interface is no longer merely showing information to a person; it is allowing that person to affect what happens next.
+
+More directly, _an interaction is the intent behind an action_. The click, tap, swipe, command, movement, or spoken word is only the visible part of it. Behind that action is something the user is _trying_ to do. They want to open a menu, move forward, submit a form, pause a song, dismiss a warning, turn on a light, or simply figure out what is happening. The system may only receive a signal, but the user is not just sending one. The user is making a request.
+
+### Modern Frustrations With Technology
+
+This is where many modern frustrations with technology begin. A user acts with one intent, but the system interprets that intent incorrectly, responds too slowly, or ignores it altogether. We have all felt this: a button that looks clickable but does nothing, a page that appears frozen, a device that heard us but did not understand us, or an interface that technically worked but failed to respond in a way we could perceive. In each case, the user made a request, but the system failed to answer clearly. When that happens, frustration is not a mystery. It is the natural result of an interaction being misunderstood, delayed, or left unresolved.
+
+This is why interactions are so special. Unlike many other forms of data, they’re both bi-directional and transformative. They move from the system to the user, then from the user back into the system. They change as they move. What begins as output may become perception, perception may become intent, intent may become action, and that action may become input. The system can then respond, beginning the cycle again. This makes interaction different from a stored file, a rendered image, or a single sound. Interaction is not merely data being carried somewhere. It is data being shaped by choice.
+
+In that sense, interactions point to something deeply human. We are not machines passively receiving information. We notice, wonder, choose, hesitate, misunderstand, correct ourselves, try again, and sometimes press the same button seventeen times because _surely_ it will work this time. An interaction exists because a person has agency. It is defined by the user’s ability to choose, and by the system’s ability to receive that choice and respond to it. Without choice, there is no true interaction. There is only output.
+
+Of course, the machine can also shape the exchange. In many cases, the interaction begins with the system presenting something to the user: a screen, sound, prompt, warning, vibration, doorway, or other signal. The system can also choose to stop the exchange by refusing input, closing a window, timing out, or ignoring a request. But even then, the interaction has not truly disappeared. If the system fails to respond, the user may wait, try again, become confused, get frustrated, walk away, restart the device, or decide never to use the program again. Borrowing loosely from the language of motion, an action simply does not vanish because the system refuses to continue it. The user still moves. The experience still changes. The flow still matters.
+
+This is why user interfaces cannot be designed as if computers are at the center of the universe. They are not. Computers exist to serve human purpose. They help us create, learn, organize, communicate, worship, build, imagine, and solve problems that would otherwise remain out of reach. When an interface forgets the user, it becomes cold, frustrating, and needlessly difficult. But when it honors the user’s intent, responds clearly, and carries information through the right path, technology begins to feel less like a wall and more like a tool.
+
+That is the heart of the CatalystUI Model. It gives us a way to see the entire journey: the information being stored, the domains it belongs to, the layers it passes through, the connectors that transform it, and the interaction that brings it back to the person who started the exchange. It helps us stop treating user interfaces as piles of disconnected widgets, windows, APIs, renderers, and devices, and instead recognizes them as complete systems of communication between _people_ and _machines_.
+
+### Interactions: The Purpose of Behind It All
+
+For years, the dream was simple but stubborn: technology should not have to feel this broken. A program doesn’t need to become bloated, fragile, or platform-bound just to give us a clear way to interact with the machine. A framework doesn’t need to hide simple ideas behind layers of confusion. A user interface doesn’t need to force the person to think like the computer. It is important for a computer to be designed to understand the person. CatalystUI exists because that dream is not impossible. It only needed a model clear enough to describe what was really happening.
+
+The Stack gives us the structure. The domains tell us what kind of information we are handling. The connectors explain how that information moves and changes. Interactions remind us why any of it matters in the first place. Together, they form a way to design computers around people again: not around trends, not around arbitrary framework decisions, not around the limitations we were _told_ to accept, but around the _actual flow of information_ between human beings and their systems.
+
+This is why the CatalystUI Model is so important. This is why the years of work, love, heart, hatred, frustration, and hope were poured into it. And this is why I’m glad to have you here. Welcome to the Catalyst universe. I’m glad you were able to join me on just a part of my adventure. I hope it shaped at least a small piece of your perception of the world for the better.
+
+> Onwards and upwards, my faithful companions.
