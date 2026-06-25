@@ -1,1 +1,41 @@
-Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to domains on the [Domains page](../index.md).
+# 4.2 Domains :: Visual
+
+## In-Depth Discussion
+
+Where the **symbolic** domain describes data before it has been committed to a specific sense, the **visual** domain describes data once it has been shaped for sight. Visual data is information meant to be seen: an image, rendered text, or a visible control. The important distinction is not whether the data “could” eventually appear on a screen, but whether its present role in the interaction is to communicate through vision.
+
+This means visual data should not be confused with the stored form behind it. A file containing image data is still symbolic while it exists only as stored information. A paragraph of text is still symbolic while it exists only as characters, markup, or another abstract representation. It becomes visual when the system presents it in a form the user can see and interpret. The change is not that the data becomes more important; the change is that its method of communication has moved from representation to perception.
+
+Visual data is especially common because sight can communicate many relationships at once. Size, colour, spacing, direction, grouping, and motion can all help the user understand what something is, where it belongs, and whether it can be acted upon. This is why visual interfaces often feel immediate. A user can glance at a window, webpage, or game scene and gather meaning before reading every word. The system is not only showing data; it is arranging data into a visible experience.
+
+### Understanding Visual Data
+
+A helpful way to understand visual data is to consider **placement**, **appearance**, and **state**. These are not formal sub-domains or required categories in the CatalystUI Model, but they provide a practical way to recognise how visual information communicates meaning.
+
+**Placement** describes where visual data appears and how it relates to the information around it. A heading placed above a paragraph communicates ownership. A button placed near a form communicates association. A menu placed over other content communicates temporary priority. Placement matters because the user does not perceive visible objects in isolation; they perceive relationships between visible objects.
+
+**Appearance** describes how visual data presents itself to the user. Shape, colour, typography, contrast, and imagery all influence what the user believes they are looking at. A piece of text may look like a title, a warning, or a link depending on how it is styled. A rectangle may look like a button, a panel, or decoration depending on its border, spacing, and surrounding context. Appearance gives visual data its recognisable form.
+
+**State** describes the current condition being communicated visually. A control may appear active, disabled, selected, focused, loading, or hidden. These states matter because the user’s next action often depends on what the interface appears ready to do. If the visual state does not match the system’s actual condition, the interface becomes confusing even if the underlying logic is technically correct.
+
+### Visual Meaning
+
+Visual output expresses meaning, but it should not be mistaken for the meaning itself. A red border may communicate that something is wrong, but the border is not the error. An icon may represent an action, but the icon is not the action. A layout may show hierarchy, but the layout is not the underlying structure. Visual data is the sensory expression of meaning, not the full source of meaning.
+
+This distinction helps prevent a common design mistake: placing too much responsibility on what something looks like without preserving what it means. If an interface depends only on colour to communicate an error, the meaning is trapped inside one visual signal. If an icon has no supporting label, description, or accessible meaning, the system may look clean while becoming harder to understand. Visual clarity is strongest when the visible form faithfully expresses the underlying intent.
+
+Visual data also carries a unique kind of risk because users tend to trust what they see. If something appears clickable, the user expects it to respond. If something appears disabled, the user expects it not to respond. If something appears selected, the user expects the system to treat it as selected. When the visible presentation and the actual behaviour disagree, the user experiences the interface as broken, even if the program is behaving exactly as written.
+
+### Visual Data and Accessibility
+
+The visual domain makes accessibility easier to reason about because it identifies when information is being communicated through sight alone. If an error is shown only by colour, a chart only by an image, or progress only by animation, then the meaning may not be available to every user. The issue is not that visual communication is bad; the issue is that visual communication may need to be translated into another form.
+
+This is where domains become useful as a diagnostic tool. They help us ask where the meaning currently lives. Is it only visual? Can it also be represented symbolically? Should it be available through sound, touch, or another form of output? By answering those questions, the developer can preserve the same meaning across different kinds of perception instead of treating accessibility as an afterthought.
+
+### Visual Data in Broader Experiences
+
+Visual data can also participate in experiences that are not purely visual. A video player may combine moving images with sound. A game may combine graphics, music, and controller feedback. An operating system may combine windows, alerts, and input devices into one larger exchange. In these situations, the visual domain identifies the portion of the experience meant for sight, while other domains describe the additional forms of perception involved.
+
+This keeps the model precise. A visual interface is not automatically the whole user interface, and a multisensory experience does not erase the visual portion inside it. Each domain helps identify how meaning is being carried. The visual domain answers one specific question: what information is being shaped so the user can see it?
+
+In short, the visual domain describes the movement from symbolic representation into sight-readable output. It gives us a way to discuss visible information without reducing all interfaces to graphics. When visual data is handled well, the user can recognise what the system is presenting, understand what can be acted upon, and respond with confidence.
