@@ -1,1 +1,67 @@
-Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to the Stack on the [the Stack page](../index.md).
+# 5.5 The Stack :: Graphs & Frames
+
+## In-Depth Discussion
+
+### The Organisational Layer
+
+**Graphs & Frames** is the layer where usable interface objects are organised into a larger operating context. Layer 5 provides components, controls, and layouts as mutable objects, but those objects do not automatically form a complete interface by existing together. They need a way to be discovered, related, queried, ordered, routed, bounded, and prepared for the lower layers of the Stack.
+
+This is the purpose of Layer 4. It receives the active interface objects from Layer 5 and establishes the broader context in which they operate. A component may know how to represent its own state, a control may know how to handle an interaction, and a layout may know how to arrange a group of components, but Layer 4 determines how those pieces participate in the interface as a whole.
+
+### Graphs
+
+A **graph** describes organised relationships between components, controls, and layouts. It provides the structure needed to understand how interface objects relate to one another, how they may be located, and how they may be traversed or queried during active operation.
+
+This makes a graph distinct from a layout. A layout arranges components according to a particular rule or pattern. A graph manages the larger relationship space in which layouts and components exist. It may describe parent-child relationships, ownership, dependency, grouping, ordering, focus paths, routing paths, or other forms of connection that help the interface operate as a coherent system.
+
+A graph also provides a practical way to locate and manage interface objects without forcing every component to know about every other component. Components can remain focused on their own usable state, while the graph provides the surrounding structure needed for discovery, coordination, and routing. This keeps the interface from becoming a collection of isolated objects or a tangled set of direct references.
+
+### Frames
+
+A **frame** describes the larger current operating context prepared for the lower layers of the Stack. Where a graph organises interface objects and their relationships, a frame contains and coordinates the relevant state of that organisation in a form that can be passed toward rendering, output, or lower-level processing.
+
+The frame acts as the main boundary between the object-oriented interface world of Layer 5 and the rendering-oriented world of Layer 3. It does not merely contain components; it prepares them. This preparation may include resolving bounds, applying layout results, collecting renderable elements, ordering output, tracking the current interface state, or producing a temporary representation of what the renderer should work with.
+
+A frame should be understood as contextual rather than permanent. It represents the current condition of the interface for a particular pass, update, render, or routing operation. As the interface changes, new frames or updated frame states may be produced. This allows the Stack to describe live operation without confusing temporary presentation state with stored content or interpreted structure.
+
+### Relationship Between Graphs and Frames
+
+Graphs and frames work together because an interface needs both relationship and context. The graph explains how interface objects are connected. The frame explains what the lower layers should receive from those connected objects at a particular moment.
+
+This distinction matters because organisation and preparation are not the same task. A graph may contain the relationships necessary to find a control, understand a layout hierarchy, or determine which component belongs to which region of the interface. A frame may take the current result of that organisation and prepare it for rendering or interaction routing. The graph provides the map; the frame provides the current pass through that map.
+
+Together, they keep Layer 4 from becoming either a passive collection of components or a renderer-specific command list. It remains the organisational and contextual layer of the Stack: close enough to Layer 5 to understand interface objects, but close enough to Layer 3 to prepare them for lower-level transformation.
+
+### Preparing for Rendering
+
+In top-down flow, Graphs & Frames receives components, controls, and layouts from Layer 5 and prepares them for the Renderer. This does not mean Layer 4 performs rendering. Rendering belongs to Layer 3. Layer 4 determines what should be sent downward, in what relationship, under what bounds, and in what current state.
+
+This preparation is necessary because a renderer should not be responsible for understanding the full meaning of every component, control, or layout. The renderer needs a prepared form it can transform into perceivable output. Layer 4 preserves the organisation of the interface while reducing the active object model into something the renderer can work with.
+
+By doing this, Layer 4 allows renderers to remain specialised. A renderer can focus on transformation into a domain-specific output without also becoming the top-level manager of component relationships, layout hierarchy, interaction targets, and active interface state.
+
+### Routing Interactions
+
+In bottom-up flow, Graphs & Frames helps route interactions back toward the appropriate controls. Lower layers may identify that an interaction occurred, and they may provide details such as position, timing, device source, focus context, or other relevant input state. Layer 4 uses the graph and frame context to determine where that interaction belongs.
+
+This routing role is one of the clearest reasons Layer 4 must exist. A control may know how to handle an interaction once it receives it, but something must determine which control should receive it. The graph provides the relationship structure, while the frame provides the current operational context. Together, they allow the Stack to route intent through the interface rather than merely passing input upward without direction.
+
+This also means Layer 4 participates in both output preparation and input resolution. It prepares organised interface state for rendering in one direction, and it helps resolve routed interaction in the other. The same layer that knows how the interface is currently arranged is also the layer best positioned to determine how an interaction should travel back through that arrangement.
+
+### Relationship to Components, Controls, & Layouts
+
+Layer 4 depends on Layer 5 for the active interface objects it organises. Components, controls, and layouts provide the usable parts of the interface, but Layer 4 determines how those parts form a larger whole. This keeps individual components from becoming responsible for global interface management.
+
+The separation also protects layouts from becoming too broad. A layout may arrange a group of components, but it does not need to manage every relationship in the interface. It does not need to act as the full routing system, lifecycle coordinator, or rendering boundary. Layer 4 provides that higher-level organisation so layouts can remain focused on arrangement.
+
+### Relationship to the Renderer
+
+Layer 4 also protects the Renderer from responsibilities that do not belong to rendering. Without Graphs & Frames, the renderer would need to understand component trees, layout relationships, control routing, bounds resolution, and active interface context before it could produce output. That would make rendering responsible for too much of the interface model.
+
+By placing Graphs & Frames between Layer 5 and Layer 3, the Stack creates a clean handoff. Layer 5 provides usable interface objects. Layer 4 organises and prepares those objects. Layer 3 transforms the prepared representation into perceivable output. Each layer remains focused on a distinct part of the process.
+
+### Why the Layer Matters
+
+Graphs & Frames keeps the Stack from treating an interface as a loose collection of components or as a direct rendering problem. A usable interface requires organisation before it can be rendered and routing before it can respond coherently to interaction. Layer 4 provides the structure needed for both.
+
+By separating Layer 4 from Components, Controls, & Layouts and from the Renderer, the Model preserves a clean progression of responsibility. Components, controls, and layouts define the active interface objects. Graphs and frames organize those objects into a current operating context. The Renderer then transforms that prepared context into perceivable output. This distinction allows CatalystUI to describe complex interfaces without forcing components to manage the whole system or forcing renderers to understand the entire interface model.
