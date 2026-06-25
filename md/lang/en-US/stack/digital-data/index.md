@@ -1,1 +1,39 @@
-Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to the Stack on the [the Stack page](../index.md).
+# 5.2 The Stack :: Digital Data
+
+## In-Depth Discussion
+
+### The First Explicit Layer
+
+**Digital Data** is the first explicit layer of the Stack. It represents content, state, or a resource after it has entered the active interface flow in a computer-readable form, but before the Model has applied Structure & Semantics or turned it into components, layout, rendering, or presentation. It is the point where retained availability becomes something the Stack can begin working with directly.
+
+This layer is explicit because the Model can now describe the resource as part of the interface process. While Data Storage explains where something may persist outside the active flow, Digital Data explains the active representation that has been read, received, loaded, streamed, generated, or otherwise made available to the Stack. It is no longer merely available somewhere. It is now present in a form the system can process.
+
+### Computer-Readable Representation
+
+Digital Data is defined by its ability to be represented in binary and processed by a machine. At this layer, the resource may be held as bytes, encoded text, a received response, a memory buffer, a stream, or another machine-readable representation. The exact container is less important than the role it plays: it is the active form of the resource before interpretation.
+
+This means Digital Data should not be confused with meaning, structure, or presentation. A sequence of bytes may contain a document, image, command, configuration, or audio file, but Layer 7 does not yet describe how that sequence should be understood. It only establishes that the content exists inside the Stack in a form the system can access and pass to the next layer.
+
+### Before Structure and Semantics
+
+Digital Data sits immediately above **Layer 6: Structure & Semantics** because it represents the material that Structure & Semantics will interpret. Until that interpretation occurs, the Stack has not yet identified the rules, relationships, fields, sections, or meanings contained within the representation. The resource may already follow a format, but the Model has not yet applied that format.
+
+A stored document may already be valid according to its format, and a file may already contain organized content, but Layer 7 does not model that organization as understood structure. The moment the Stack begins applying rules for how the representation should be read, the flow has moved into Structure & Semantics. Digital Data is therefore not meaningless; it is simply not yet interpreted within the Stack.
+
+### The Upper Turning Point
+
+Digital Data acts as the upper turning point of the explicit Stack. In top-down flow, it is where the Stack begins transforming a computer-readable representation into something that can eventually be perceived or interacted with by the user. The flow begins with an active representation, then moves downward through interpretation, component formation, organization, rendering, windowing, and system delivery.
+
+In bottom-up flow, Digital Data is where the result of an interaction becomes machine-readable again. A user action may be routed, handled, and converted into a change within the interface. That change may then move upward through the Stack until it becomes Digital Data: an active representation that can be retained, transmitted, compared, regenerated, or returned to Data Storage. In this way, Layer 7 participates in both directions of the interface cycle.
+
+### Digital Data and Domains
+
+Digital Data is often closely related to the **Symbolic** domain because it usually exists before a specific sensory form has been chosen. A text file, for example, may later be displayed visually, spoken audibly, translated into another format, or processed without being presented directly at all. At Layer 7, the important fact is not how the user will eventually perceive it, but that the representation is available for the Stack to interpret.
+
+This does not mean Digital Data can only be symbolic. A resource may contain visual, auditory, tactile, or multisensory content in its encoded form. However, the layer itself describes the computer-readable representation before the active Stack has transformed it into a perceivable or interactive result. Domains identify the kind of information being handled; the Stack identifies where that information is in the flow.
+
+### Why the Layer Matters
+
+Digital Data keeps the Model from skipping the first active step of interface work. Without this layer, the Stack would move directly from storage into interpretation, as though stored resources automatically carried usable structure the moment they were accessed. In real systems, that is not what happens. Something must first exist in an active machine-readable form before it can be parsed, validated, organized, adapted, rendered, or presented.
+
+By separating Digital Data from both Data Storage and Structure & Semantics, the Model preserves three important distinctions. Data Storage explains persistence outside the active flow. Digital Data explains active computer-readable representation inside the flow. Structure & Semantics explains the interpretation of that representation. Keeping these responsibilities separate allows the Stack to describe interface behavior with greater precision, especially when the same stored resource may be read, interpreted, transformed, or presented in more than one way.
