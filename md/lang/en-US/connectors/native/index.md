@@ -1,1 +1,87 @@
-Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to Connectors on the [Connectors page](../index.md).
+# 6.6 Connectors :: Native
+
+## In-Depth Discussion
+
+### From Windows to Systems
+
+The **Native** connector sits between **Layer 2: Windows** and **Layer 1: Systems**. It is responsible for connecting the window to the underlying system so output can be delivered and interactions can be received through the actual environment in which the program is running.
+
+Layer 2 gives the Stack a window: a bounded view, container, or point of delivery. Layer 1 gives the Stack the system: the operating environment, hardware access, services, devices, and native behavior that make the window possible. The Native connector provides the crossing point between these two layers.
+
+This connector is often where the Stack touches the practical reality of computing most directly. Up to this point, the Model has described information as it moves through structured data, components, graphs, renderers, and surfaces. However, a window does not exist by imagination alone. Something must ask the system to create it, configure it, maintain it, update it, and report interactions back through it.
+
+That something is the Native connector.
+
+### Defining Bindings
+
+A **binding** is a controlled connection between one layer and functionality provided by another. In the context of the Native connector, bindings expose system-level behavior to the window in a form the program can use without requiring the window to become the system itself.
+
+This definition is intentionally simple. A binding does not need to be mysterious. It is the accessible relationship between the code above and the functionality below.
+
+A native binding may expose the ability to create a window, change its title, receive keyboard input, respond to pointer movement, resize the active area, request focus, access a device, or communicate with a system service. The details will vary by system and implementation, but the concept remains the same: the binding provides a usable connection to native functionality.
+
+This is why bindings matter so much at this layer. The system may provide powerful capabilities, but those capabilities are not automatically available in the language or structure used by the rest of the Stack. They must be exposed through some form of connection. The Native connector is where those connections are gathered, shaped, and used.
+
+### Providing Native Access
+
+In many implementations, the Native connector will mostly provide bindings to lower-level system functionality. This may seem ordinary at first, especially because developers are already familiar with native APIs, platform libraries, operating system calls, device interfaces, and similar tools. However, within the Stack, these are not merely random implementation details. They are the means by which Layer 2 gains access to Layer 1.
+
+A graphical window on a desktop operating system may require bindings to a platform windowing API. A command-line interface may require bindings to terminal input and output. A specialized device may require bindings to buttons, sensors, speakers, lights, or other system-controlled devices. In each case, the Native connector provides the relationship that lets the window act within the system.
+
+The important part is not which platform is being used. The important part is that the window cannot deliver output or receive interaction unless it has some way to communicate with the system that contains it.
+
+The Native connector provides that way.
+
+### More Than a Wrapper
+
+Because this connector often exposes native behavior, it may be tempting to describe it as a wrapper around system APIs. That description may be useful in some practical contexts, but it does not fully explain what the connector is doing inside the Model.
+
+A wrapper describes how people often implement this kind of layer. A binding describes what the connector is actually providing.
+
+The Native connector is not merely a pile of platform calls placed underneath the window. It is the formal relationship between the window and the system. It defines how the window receives its system-backed existence, how system behavior becomes available to the Stack, and how system-originating interactions begin moving upward.
+
+This distinction matters because the Model is not trying to preserve the way developers have historically described these tools. It is trying to describe the underlying process itself. In that process, the Native connector is not important because it happens to wrap a native API. It is important because it binds Layer 2 to Layer 1.
+
+That is what this connector really is.
+
+### Creating and Maintaining the Window
+
+In top-down flow, the Native connector allows the window to operate through the system. A window may need to be created, shown, hidden, resized, moved, focused, updated, or closed. These actions require some relationship with the system, because the system is the layer that actually provides the environment in which those actions can occur.
+
+The Native connector may expose the bindings needed to perform those actions. Through it, Layer 2 can request system behavior without absorbing the entire responsibility of system management. The window remains the bounded point of delivery. The system remains the environment that provides the underlying functionality. The Native connector carries the relationship between them.
+
+This is especially important because systems differ. Different operating systems, devices, runtimes, and environments may provide different APIs and behaviors. The Native connector gives the Stack a place to represent those differences without forcing the rest of the Model to become system-specific.
+
+### Receiving Interactions
+
+Because the Stack is reversible, the Native connector is also the first explicit connector involved when an interaction enters from the system.
+
+A key press, pointer movement, touch input, controller action, device signal, resize event, focus change, or other system-originating event must cross from Layer 1 into Layer 2 before the rest of the Stack can do anything with it. The Native connector provides that crossing. It receives or exposes the system’s interaction information and carries it into the window, where it can continue upward through the Surface connector into Renderers, then through the Bridge, Adapter, Parser, and Data connectors as needed.
+
+In many cases, the Native connector does not need to decide what the interaction means. Its role is to bind the system’s interaction source to the window’s interaction path. The system reports that something happened. The Native connector makes that report usable to Layer 2. The rest of the Stack can then route, transform, and handle the interaction according to its own responsibilities.
+
+This keeps the lower boundary clean. The Native connector gives interaction input a way into the Stack without requiring the system to understand the higher layers, and without requiring the higher layers to behave as though they are the system.
+
+### Preserving the Boundary
+
+A Native connector should preserve the boundary between the window and the system. It should expose the system functionality the window needs, but it should not erase the distinction between the two layers.
+
+This is where bindings are especially useful as a concept. A binding allows access without identity. The window can use system functionality without becoming the system. The system can provide behavior without becoming the window. The connector defines the relationship between them.
+
+This boundary is what allows CatalystUI to describe a window consistently across different environments. One system may provide a traditional desktop window. Another may provide a terminal. Another may provide a device-specific output channel. Another may provide a remote or virtualized environment. The native bindings may differ, but the role of the connector remains the same.
+
+The Native connector binds Layer 2 to Layer 1 so the window can exist, operate, receive interactions, and deliver output within the system that supports it.
+
+### Why the Connector Matters
+
+The Native connector keeps the Stack from confusing a window with the system that provides it. Without this connector, Windows would need to contain system-specific behavior directly, or Systems would need to understand the higher-level concept of the window. Either direction would blur the boundary between the point of delivery and the environment that makes delivery possible.
+
+By defining the Native connector, the Model gives this transition a proper place.
+
+Windows remain responsible for the bounded context through which output and interaction pass. Systems remain responsible for the underlying environment, services, devices, and native behavior. The Native connector handles the binding between them.
+
+This is the final explicit connector of the Stack. It is where the modeled interface reaches the system underneath it. It may look like platform access. It may be implemented through native libraries, operating system calls, device APIs, or runtime services. But underneath those familiar descriptions, its purpose is clearer and simpler.
+
+The Native connector provides bindings.
+
+It binds the window to the system, allowing output to leave the Stack and interaction to enter it. In doing so, it completes the explicit path between the modeled interface and the real environment in which that interface must live.

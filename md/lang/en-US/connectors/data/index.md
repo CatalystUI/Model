@@ -1,1 +1,67 @@
-Since CatalystUI is in early release, it seems the in-depth discussion for this page hasn't been written yet! Sorry about that. For now, you can read the general introduction to Connectors on the [Connectors page](../index.md).
+# 6.1 Connectors :: Data
+
+## In-Depth Discussion
+
+### The First Translation
+
+The **Data** connector is the first explicit connector of the Stack. It sits between **Layer 7: Digital Data** and **Layer 6: Structure & Semantics**, where active computer-readable information first begins to receive an interpreted form. Layer 7 tells us that the information exists as digital data. Layer 6 tells us how that information is structured and what it means. The Data connector explains how the system moves from one condition to the other.
+
+This connector is necessary because digital data does not interpret itself. A file, stream, buffer, database result, response, or message may already contain organized information, but organization is not the same as interpretation. Something must access the data, read it according to the appropriate expectations, and produce a form that Structure & Semantics can understand. That “something” is the Data connector.
+
+In that sense, this connector is the first act of translation within the explicit Stack. It does not create the original information, and it does not yet create user-facing components. Its role is to bring information into the active flow as Digital Data when needed, then connect that active digital representation to the rules and structures that make interpretation possible.
+
+### Working With Data Storage
+
+Although the Data connector sits between Digital Data and Structure & Semantics, it often has a close relationship with the implied **Data Storage** layer. This is because many forms of digital data are not useful until they can be accessed from wherever they are stored. This is why a Data connector often performs two related responsibilities. First, it reaches into storage to retrieve, receive, or otherwise access information so that information can enter the active flow as Digital Data. Second, it processes the resulting Digital Data into an interpreted structure.
+
+A MySQL data connector is a good example. From the perspective of the Model, the MySQL database may be treated as Data Storage, while the query result becomes the active Digital Data being worked with. The connector may establish the connection, send a query, receive the result, and then organize that result into structured information the rest of the Stack can understand. The database connection, query behavior, and result processing may all appear inside the same connector because the Data connector is responsible for reaching into storage and carrying the retrieved information toward structured, meaningful data.
+
+This does not make Data Storage an explicit layer of the Stack, and it does not make the Data connector responsible for being the database, file system, service, or storage mechanism itself. Rather, the Model recognizes that the first connector often needs to reach toward storage in order to bring digital data into the active flow of the system.
+
+### Access Is Not Understanding
+
+The Data connector exists partly because access and understanding are not the same thing. A computer may open a file, receive a response, hold bytes in memory, or connect to a database. That only proves the information is available. It does not prove the information has been understood.
+
+For example, a settings file may be available as text. The system may know where the file is, read its contents successfully, and hold those contents in memory. Even then, the Stack has not yet determined which parts are keys, which parts are values, which sections are valid, or which rules define the format.
+
+The Data connector provides the movement from “the information is available as digital data” to “the information can now be interpreted according to structure and semantics.” This distinction keeps Layer 7 clean. Digital Data does not need to know how every possible format should be interpreted. It only needs to represent the active computer-readable information. The Data connector then performs the handoff into Layer 6, where interpretation can occur according to the appropriate rules.
+
+### Producing Structure
+
+In top-down flow, the Data connector receives Digital Data and prepares it for Structure & Semantics. This may involve reading bytes, decoding text, identifying a format, selecting semantic rules, validating basic expectations, or transforming the representation into an organized structure. The exact work depends on the kind of information being handled, but the responsibility remains the same: connect the active representation to an interpreted form.
+
+A JSON settings file may begin as encoded text. The Data connector reads the text, recognizes the expected format, and produces structured information representing the settings. A CSV file may become rows and fields. A database result may become records. A binary file may become headers, sections, and values. A server response may become a structured message.
+
+The important point is the movement. The Data connector may begin by reaching into storage, but its explicit Stack transition is complete only when the retrieved or received Digital Data has become information that can be understood through Structure & Semantics.
+
+### Preserving Meaning
+
+A Data connector must preserve meaning as information moves between layers. This does not mean every detail of the original representation must remain unchanged. It means the connector should preserve the intended relationship between the digital data and the interpreted structure it produces.
+
+For example, if a file contains a title, the resulting structure should represent that title in a way that remains faithful to the original information. If a database record contains an identifier, that identifier should remain connected to the record it describes. If a format defines order, grouping, or required values, the connector should respect those expectations when producing the structured result.
+
+### Returning to Digital Data
+
+Because the Stack is reversible, the Data connector also participates in bottom-up flow. When an interaction changes information in the interface, that change may eventually need to return to Digital Data. Before it can be preserved, transmitted, or reused, the structured information must be converted back into a computer-readable form.
+
+In this direction, the Data connector performs the opposite transformation. It receives structured information from Layer 6 and produces Digital Data suitable for storage, transmission, comparison, or further processing.
+
+A settings structure may become encoded JSON text. A table of values may become CSV. A record may become a database update. A document structure may become the bytes of a file.
+
+This reverse movement is just as important as the top-down movement. If the Data connector can read information into structure but cannot write structure back into digital form, the interface may be able to display or use information, but it cannot fully preserve the result of interaction. The connector therefore helps complete the cycle between user intent and persistent change.
+
+### Validation and Failure
+
+The Data connector is also one of the first places where failure can be meaningfully recognized. Digital Data may be missing, malformed, incomplete, unsupported, outdated, or inconsistent with the semantic rules expected by Layer 6.
+
+When this happens, the connector should make the result of that transformation clear. A connector may recover from missing optional values, apply defaults, ignore unsupported extensions, or produce a partial structure when appropriate. However, the rest of the Stack should not be forced to guess whether the data was interpreted correctly.
+
+By identifying failure at this boundary, the Model keeps interpretation honest. The Data connector protects the rest of the Stack from building on information that was never successfully understood.
+
+### Why the Connector Matters
+
+The Data connector keeps the Stack from assuming that digital data automatically becomes meaningful once it is available. Without this connector, the Model would blur the boundary between representation and interpretation. Layer 7 would be forced to understand formats directly, or Layer 6 would be forced to retrieve raw data for itself. By defining the Data connector, the Model gives this transition a proper place.
+
+Digital Data remains responsible for active computer-readable representation. Structure & Semantics remains responsible for interpreted meaning and organized form. The Data connector handles the movement between them.
+
+This makes the first transformation of the Stack explicit. Information begins as active digital representation, crosses through the Data connector, and becomes something the system can understand. From there, the rest of the Stack can continue the process: turning interpreted information into usable interface objects, organizing those objects into context, preparing them for output, delivering them through the system, and allowing the user to respond.
