@@ -1,6 +1,6 @@
 # 7. Interactions
 
-## High-Level Overview
+## Per-Topic Summary
 
 At this point, we can describe a user interface through the CatalystUI Model with far more clarity than before. We can identify the flow of information, classify that information into domains, trace it through the Stack, and explain how connectors move and transform it from one layer to the next. In doing so, much of the mystery behind user interfaces begins to dissolve. We can see where the information starts, where it goes, how it changes, and how it eventually reaches the user.
 

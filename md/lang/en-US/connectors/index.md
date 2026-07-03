@@ -1,6 +1,6 @@
 # 6. Connectors
 
-## High-Level Overview
+## Per-Topic Summary
 
 Connectors are unique because they do more than describe _how_ information moves between layers; they also allow us to _abstract_ many of the limitations imposed by hardware devices. We are aware this is a bold claim, however, when a user interface is appropriately designed around the CatalystUI Stack, connectors can be built in such a way that they can be swapped out with different implementations as needed. In this sense, connectors act as a _translation medium for information_. Unlike the layers in the Stack, which are typically locked to a specific domain once assigned, connectors can transform information from one domain to another. For example, a connector could take text content and prepare it for a screen, a speaker, or even tactile feedback through a braille display!
 

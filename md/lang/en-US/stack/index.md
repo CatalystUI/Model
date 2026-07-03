@@ -1,6 +1,6 @@
 # 5. The Stack
 
-## High-Level Overview
+## Per-Topic Summary
 
 After classifying _what_ type of data is involved in the flow, we can then focus on _where_ the data is located. This is when analyzing existing solutions can really come in handy, especially when examining their differences. Prior to dissecting each solution, we can identify two fundamental truths to give our analysis a solid footing: first, the _data_ must exist somewhere, whether being stored as binary, on a disk, in memory, or any other form of data storage, and second, a _person_ must also exist somewhere, whether on the other end of a screen, headphones, controller, or any other form of interface. We will view these two concepts as a sandwich, with “Data Storage” as the top bun and a “Human Interface” as the bottom bun. Since these two concepts are obvious, once identified, as parts of the flow of information, we’ll call them _implied_, since the nature of the flow _implies_ their existence.
 
@@ -38,6 +38,6 @@ Once the decision is made, the flow moves back down the Stack: the updated door 
 
 For a second example, we can look at the web. The web is one of the closest existing attempts at a broad user-interface model, especially through the W3C and its standardized interfaces. However, because it is mainly designed around communication between computers, it does not capture every part of the Stack on its own. On a typical webpage, “Data Storage” may be represented by the server, database, file system, or API-backed service that hosts the page. When the browser fetches HTML, CSS, JavaScript, images, and similar resources, those become “Digital Data.” The rules for reading them, such as HTML semantics, CSS styling, and JavaScript behavior, belong to “Structure & Semantics.” Once interpreted, they become usable page elements, such as text, buttons, forms, links, images, and layout containers, which belong to “Components, Controls, & Layouts.” The document and DOM then provide “Graphs & Frames,” organizing those elements into a current interface context. From there, the browser’s “Renderer” prepares the page for presentation. The browser appears inside a “Window” provided by the operating system, which then serves as the “System” that delivers the result to the “Human Interface.”
 
-## The Need for Connectors
+### The Need for Connectors
 
 During the early development of CatalystUI, we believed the Stack alone might be enough to describe a user interface. At first, this seemed reasonable. The Stack already provides a clearer, more complete way to identify each part in a user interface than many existing models do. But as we began using it as the foundation for real development, something still felt missing. We could describe _what_ each piece was. We could describe _where_ it belonged. But there was still a gap between them: _how_ did data move between layers? The Stack gave us the path, but it did not yet explain the movement from one layer to the next. To complete the Model, we needed to define those transitions. This is when “Connectors” become not merely an additional concept, but a necessity.

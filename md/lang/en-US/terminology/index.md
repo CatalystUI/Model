@@ -1,5 +1,7 @@
 # 1. Terminology
 
+## Foundations
+
 Before we begin, since readers may come from a variety of backgrounds, it’s important to clarify common terms used throughout the documentation. While these terms may be familiar to those with experience in user-interface design, many will differ from their traditional meanings. They will be reintroduced to refine, clarify, and unify the language used.
 
 ---

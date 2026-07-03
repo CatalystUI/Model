@@ -1,5 +1,9 @@
 # 2. Summary
 
+## The Flow of Information
+
+> **Note:** This section serves as the high-level overview of the Model. Subsequent documentation will provide the per-topic summaries and in-depth discussions, respectively.
+
 To understand how a user interface works, we must first define “_the flow of information_.” Every day, whether people realize it or not, they interact with information systems—be it a smartphone, computer, or a storefront door sensor (more on that later). In each system, information is presented, the user interprets it, optionally responds, and then the system processes that response. Then the system presents information again, and the cycle repeats throughout the interaction. The cycle can begin at any point: information may have been presented long before the user could interpret it, or a user can respond without information having been presented. Regardless of when or how the flow begins, the same cycle applies.
 
 The CatalystUI Model is built around this flow. It provides a high-level structure for describing how information flows between a user and an information system, even when the system does not resemble a traditional user interface. In other words, a storefront door sensor may seem to “sense” a person almost magically, but the flow of information makes the process simple: the user sees the doorway, recognizes the path forward, and walks into the detection area. That movement becomes input to the system. The system processes it, opens the door as perceivable output, and the user responds by walking through. After a short delay, the system closes the door, ending the exchange until another action restarts the cycle.
