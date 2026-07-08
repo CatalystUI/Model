@@ -1,3 +1,8 @@
+<!--
+Diese Übersetzung wurde von ChatGPT erstellt und sollte von einem menschlichen Übersetzer überprüft werden.
+Entfernen Sie diese Zeilen in einem Pull Request, nachdem die Übersetzung überprüft wurde.
+-->
+
 # 3. Referenz
 
 Unten ist das CatalystUI-Modell in verschiedenen Formaten zusammengefasst, damit es beim Lernen, Dokumentieren oder Implementieren des Modells leichter nachgeschlagen, kopiert und angewendet werden kann.

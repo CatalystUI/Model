@@ -1,3 +1,8 @@
+<!--
+Esta tradução foi gerada pelo ChatGPT e deve ser revisada por um tradutor humano.
+Remova estas linhas em uma pull request após a tradução ser verificada.
+-->
+
 # 2. Resumo
 
 Para entender como uma interface de usuário funciona, primeiro precisamos definir “_o fluxo de informação_”. Todos os dias, percebam ou não, as pessoas interagem com sistemas de informação — seja um smartphone, computador ou sensor de porta de uma loja (mais sobre isso depois). Em cada sistema, a informação é apresentada, o usuário a interpreta, responde opcionalmente, e então o sistema processa essa resposta. Depois, o sistema apresenta informação novamente, e o ciclo se repete durante toda a interação. O ciclo pode começar em qualquer ponto: a informação pode ter sido apresentada muito antes de o usuário conseguir interpretá-la, ou um usuário pode responder sem que uma informação tenha sido apresentada. Independentemente de quando ou como o fluxo começa, o mesmo ciclo se aplica.

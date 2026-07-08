@@ -1,3 +1,8 @@
+<!--
+Cette traduction a été générée par ChatGPT et doit être relue par un traducteur humain.
+Supprimez ces lignes dans une pull request une fois la traduction vérifiée.
+-->
+
 # 2. Résumé
 
 Pour comprendre le fonctionnement d’une interface utilisateur, nous devons d’abord définir « _le flux d’information_ ». Chaque jour, que les gens s’en rendent compte ou non, ils interagissent avec des systèmes d’information — qu’il s’agisse d’un smartphone, d’un ordinateur ou d’un capteur de porte à l’entrée d’un magasin (nous y reviendrons). Dans chaque système, l’information est présentée, l’utilisateur l’interprète, y répond éventuellement, puis le système traite cette réponse. Ensuite, le système présente de nouveau de l’information, et le cycle se répète tout au long de l’interaction. Le cycle peut commencer à n’importe quel point : l’information peut avoir été présentée bien avant que l’utilisateur puisse l’interpréter, ou un utilisateur peut répondre sans qu’une information ait été présentée. Peu importe quand ou comment le flux commence, le même cycle s’applique.

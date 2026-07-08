@@ -1,3 +1,8 @@
+<!--
+Esta tradução foi gerada pelo ChatGPT e deve ser revisada por um tradutor humano.
+Remova estas linhas em uma pull request após a tradução ser verificada.
+-->
+
 # 5.6 The Stack :: Renderers
 
 ## Discussão aprofundada

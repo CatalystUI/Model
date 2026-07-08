@@ -1,3 +1,8 @@
+<!--
+Diese Übersetzung wurde von ChatGPT erstellt und sollte von einem menschlichen Übersetzer überprüft werden.
+Entfernen Sie diese Zeilen in einem Pull Request, nachdem die Übersetzung überprüft wurde.
+-->
+
 # 2. Zusammenfassung
 
 Um zu verstehen, wie eine Benutzerschnittstelle funktioniert, müssen wir zuerst „_den Informationsfluss_“ definieren. Jeden Tag interagieren Menschen, ob ihnen das bewusst ist oder nicht, mit Informationssystemen – sei es ein Smartphone, ein Computer oder ein Türsensor an einem Ladeneingang (dazu später mehr). In jedem System wird Information präsentiert, der Benutzer interpretiert sie, reagiert optional darauf, und das System verarbeitet diese Reaktion. Dann präsentiert das System erneut Information, und der Zyklus wiederholt sich während der gesamten Interaktion. Der Zyklus kann an jedem Punkt beginnen: Information kann lange präsentiert worden sein, bevor der Benutzer sie interpretieren konnte, oder ein Benutzer kann reagieren, ohne dass zuvor Information präsentiert wurde. Unabhängig davon, wann oder wie der Fluss beginnt, gilt derselbe Zyklus.

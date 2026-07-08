@@ -1,3 +1,8 @@
+<!--
+Diese Übersetzung wurde von ChatGPT erstellt und sollte von einem menschlichen Übersetzer überprüft werden.
+Entfernen Sie diese Zeilen in einem Pull Request, nachdem die Übersetzung überprüft wurde.
+-->
+
 # 4.1 Domains :: Symbolic
 
 ## Ausführliche Besprechung

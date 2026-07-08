@@ -1,3 +1,8 @@
+<!--
+Cette traduction a été générée par ChatGPT et doit être relue par un traducteur humain.
+Supprimez ces lignes dans une pull request une fois la traduction vérifiée.
+-->
+
 # 1. Terminologie
 
 Avant de commencer, puisque les lecteurs peuvent venir d’horizons variés, il est important de clarifier les termes courants utilisés dans toute la documentation. Même si ces termes peuvent être familiers à ceux qui ont de l’expérience en conception d’interfaces utilisateur, beaucoup différeront de leur sens traditionnel. Ils seront réintroduits afin d’affiner, de clarifier et d’unifier le langage utilisé.

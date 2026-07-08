@@ -1,3 +1,8 @@
+<!--
+此翻译由 ChatGPT 生成，应由人工译者审核。
+翻译验证后，请在 pull request 中删除这些行。
+-->
+
 ![CatalystUI 标志](/images/catalyst/logo-black.png)
 
 > “这个夹在我和系统之间的‘东西’到底在做什么……为什么它感觉不对？”

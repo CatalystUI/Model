@@ -1,3 +1,8 @@
+<!--
+Questa traduzione è stata generata da ChatGPT e deve essere revisionata da un traduttore umano.
+Rimuovi queste righe in una pull request dopo che la traduzione è stata verificata.
+-->
+
 ![Il logo CatalystUI](/images/catalyst/logo-black.png)
 
 > “Che cosa sta facendo questa ‘cosa’ tra me e il sistema… e perché sembra sbagliata?”

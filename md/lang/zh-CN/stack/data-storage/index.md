@@ -1,3 +1,8 @@
+<!--
+此翻译由 ChatGPT 生成，应由人工译者审核。
+翻译验证后，请在 pull request 中删除这些行。
+-->
+
 # 5.1 The Stack :: Data Storage
 
 ## 深入讨论

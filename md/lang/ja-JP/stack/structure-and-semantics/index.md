@@ -1,3 +1,8 @@
+<!--
+この翻訳はChatGPTによって生成されたものであり、人間の翻訳者による確認が必要です。
+翻訳が検証された後、pull request でこれらの行を削除してください。
+-->
+
 # 5.3 The Stack :: Structure & Semantics
 
 ## 詳細な解説

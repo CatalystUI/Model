@@ -1,3 +1,8 @@
+<!--
+Questa traduzione è stata generata da ChatGPT e deve essere revisionata da un traduttore umano.
+Rimuovi queste righe in una pull request dopo che la traduzione è stata verificata.
+-->
+
 # 4. Domains
 
 ## Panoramica di alto livello

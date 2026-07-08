@@ -1,3 +1,8 @@
+<!--
+Diese Übersetzung wurde von ChatGPT erstellt und sollte von einem menschlichen Übersetzer überprüft werden.
+Entfernen Sie diese Zeilen in einem Pull Request, nachdem die Übersetzung überprüft wurde.
+-->
+
 # 1. Terminologie
 
 Bevor wir beginnen, ist es wichtig, häufig verwendete Begriffe in der Dokumentation zu klären, da Leser aus sehr unterschiedlichen Hintergründen kommen können. Auch wenn diese Begriffe Menschen mit Erfahrung im User-Interface-Design vertraut sein mögen, unterscheiden sich viele von ihrer traditionellen Bedeutung. Sie werden erneut eingeführt, um die verwendete Sprache zu verfeinern, zu klären und zu vereinheitlichen.

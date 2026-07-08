@@ -1,3 +1,8 @@
+<!--
+Questa traduzione è stata generata da ChatGPT e deve essere revisionata da un traduttore umano.
+Rimuovi queste righe in una pull request dopo che la traduzione è stata verificata.
+-->
+
 # 3. Riferimento
 
 Di seguito il Modello CatalystUI è riassunto in vari formati per renderlo più facile da consultare, copiare e applicare durante lo studio, la documentazione o l’implementazione del Modello.
